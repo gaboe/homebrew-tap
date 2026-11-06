@@ -10,13 +10,13 @@ class OpenPact < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/gaboe/open-pact/releases/download/v0.4.2/open-pact-client-aarch64-apple-darwin"
-      sha256 "d6a57e49c1c6155c71c3c00599a172140498031b07f2bcb6afe01589ff2fa392"
+      url "https://github.com/gaboe/open-pact/releases/download/v0.4.3/open-pact-client-aarch64-apple-darwin"
+      sha256 "22647be948f875f2af3e56dc1ce375a9c6a9952270e663390fb13c5da6673544"
     end
 
     on_intel do
-      url "https://github.com/gaboe/open-pact/releases/download/v0.4.2/open-pact-client-x86_64-apple-darwin"
-      sha256 "5a28226eda0e789e420055e9331578c3bd418c3af2c34dcab1c1814b098d9e6d"
+      url "https://github.com/gaboe/open-pact/releases/download/v0.4.3/open-pact-client-x86_64-apple-darwin"
+      sha256 "3c8a86606803386cd13cda304f611573a5a95e7726a2760f0acf3517c798e84a"
     end
   end
 
@@ -30,6 +30,6 @@ class OpenPact < Formula
   end
 
   test do
-    assert_match "open-pact-client 0.4.2", shell_output("#{bin}/open-pact-client --version")
+    assert_match "open-pact-client 0.4.3", shell_output("#{bin}/open-pact-client --version")
   end
 end
