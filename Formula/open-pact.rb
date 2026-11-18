@@ -5,18 +5,18 @@
 class OpenPact < Formula
   desc "Verifiable security checks for personally owned devices"
   homepage "https://github.com/gaboe/open-pact"
-  license "Apache-2.0"
+  license "MIT"
   depends_on :macos
 
   on_macos do
     on_arm do
-      url "https://github.com/gaboe/open-pact/releases/download/v0.7.1/open-pact-client-aarch64-apple-darwin"
-      sha256 "baf9d4a9481253051fbf405cffdb631244df0958c79b265cabbc06f13ac74202"
+      url "https://github.com/gaboe/open-pact/releases/download/v0.8.1/open-pact-client-aarch64-apple-darwin"
+      sha256 "5390aaaa283db95ac4551ff0b51b53662c417185c80c467e60bab04dc28478db"
     end
 
     on_intel do
-      url "https://github.com/gaboe/open-pact/releases/download/v0.7.1/open-pact-client-x86_64-apple-darwin"
-      sha256 "5bd371bf823d5bd4dfe87242f67d957e69ad1c0227086bc0935628de789b8bdc"
+      url "https://github.com/gaboe/open-pact/releases/download/v0.8.1/open-pact-client-x86_64-apple-darwin"
+      sha256 "5ea4a1524705f192bae477579ef4033a7ce78f9bf51353065bcee9497d645901"
     end
   end
 
@@ -30,6 +30,6 @@ class OpenPact < Formula
   end
 
   test do
-    assert_match "open-pact-client 0.7.1", shell_output("#{bin}/open-pact-client --version")
+    assert_match "open-pact-client 0.8.1", shell_output("#{bin}/open-pact-client --version")
   end
 end
